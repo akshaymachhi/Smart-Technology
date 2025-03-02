@@ -41,6 +41,19 @@
   margin-top: 40px;
 }
 
+.feature-content-image {
+  position: relative;
+}
+
+.icon-roller {
+  position: absolute;
+  top: 15%;
+  right: 13%;
+  padding: 25px;
+  background: #bbbbbb1f;
+  border-radius: 50px;;
+}
+
 /* @media query */
 
 @media (max-width: 576px) {
@@ -62,5 +75,11 @@
   }
   .stars {
     padding-top: 15px;
+  }
+
+  .icon-roller {
+    top: 5%;
+    right: 5%;
+    padding: 20px;
   }
 }
