@@ -87,6 +87,17 @@
   background-size: 100% 100%;
 }
 
+.contact-us .secondary-cta{
+  background-color:  var(--white-color);
+  color:var(--blue-color);
+  background-image: linear-gradient(#fc5546, #fc5546);
+}
+
+.contact-us .secondary-cta:hover {
+  background-size: 100% 100%;
+  color: var(--white-color);
+}
+
 /* @media query */
 
 @media (max-width: 768px) {

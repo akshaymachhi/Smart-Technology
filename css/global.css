@@ -67,8 +67,10 @@ a {
   background-image: linear-gradient(#0e2b5c, #0e2b5c);
   background-repeat: no-repeat;
   background-size: 0% 100%;
+  font-weight: bold;
   transition: 0.5s;
 }
+
 .primary-cta:hover {
   background-size: 100% 100%;
 }
@@ -88,6 +90,7 @@ a {
   background-image: linear-gradient(#0e2b5c, #0e2b5c);
   background-repeat: no-repeat;
   background-size: 0% 100%;
+  font-weight: bold;
   transition: 0.5s;
 }
 .secondary-cta:hover {
