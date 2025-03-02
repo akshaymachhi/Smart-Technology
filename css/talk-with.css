@@ -1,0 +1,57 @@
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-us img {
+  width: 35%;
+}
+.contact-us::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background: url("../images/zigzag.webp");
+  top: 38%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.contact-us-section {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #fff 0%, #eff2f5 40%);
+}
+
+.contact-us h2 {
+  margin-top: 150px;
+}
+.contact-us a {
+  margin-top: 120px;
+}
+
+/* @media query */
+
+@media (max-width: 912px) {
+  .contact-us img {
+    display: none;
+  }
+  .contact-us {
+    flex-direction: column;
+  }
+  .contact-us::after {
+    top: 15%;
+  }
+  .contact-us h2 {
+    margin-top: 100px;
+  }
+
+  .contact-us a {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}

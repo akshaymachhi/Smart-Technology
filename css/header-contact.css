@@ -1,0 +1,65 @@
+.header-contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px 20px;
+  background-color: var(--white-color);
+}
+.header-contact ul {
+  padding-left: 0;
+}
+
+.header-contact .header-contact-list {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-family: var(--dm-sans-medium);
+  font-size: clamp(1.6rem, 0.07vw + 1.565rem, 1.7rem);
+  color: var(--blue-color);
+}
+
+.telephone-block {
+  border-right: 1px solid #0e2b5c40;
+  padding-right: 15px;
+}
+.mail-block {
+  padding-left: 15px;
+}
+
+.header-contact-list .header-icon {
+  padding-right: 10px;
+}
+
+.header-contact-list a {
+  text-decoration: none;
+}
+.header-contact-right .header-contact-list .social-icon {
+  margin-right: 20px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.header-contact-right .header-contact-list .social-icon:last-child {
+  margin-right: 0;
+}
+
+.header-contact-right .header-contact-list .social-icon i {
+  color: #0e2b5c40;
+}
+
+.header-contact .header-contact-list a {
+  color: var(--blue-color);
+}
+
+.navigation-main {
+  background-color: var(--white-color);
+  border-top: 1px solid #0e2b5c40;
+}
+
+.navigation-main .logo img {
+  width: 160px;
+}
+
+.header-contact-right .header-contact-list .social-icon i:hover {
+  color: var(--blue-color);
+}

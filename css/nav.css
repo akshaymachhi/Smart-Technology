@@ -1,0 +1,131 @@
+.navigation-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  width: 100%;
+  padding: 25px 20px;
+}
+
+.nav-links-block .nav-links {
+  display: flex;
+  list-style: none;
+  font-family: var(--dm-sans-semibold);
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding-left: 0;
+  align-items: center;
+  font-size: clamp(1.4rem, 0.07vw + 1.365rem, 1.5rem);
+}
+
+.navigation-main .primary-cta .cta {
+  padding: 12px 15px;
+}
+
+.navigation-main .nav-links-block {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navigation-main .nav-links-block .nav-links a {
+  padding-left: 50px;
+  position: relative;
+  color: var(--blue-color);
+}
+
+.navigation-main .nav-links-block .nav-links a li::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: var(--gray-color);
+  margin: auto;
+  transition: 0.5s;
+}
+.navigation-main .nav-links-block .nav-links a li:hover::after {
+  width: 100%;
+}
+
+.nav-button {
+  display: none;
+  color: var(--white-color);
+  font-size: 2rem;
+}
+
+.nav-button .nav-icon {
+  min-height: 20px;
+  font-size: 30px;
+  padding: 8px 15px;
+  color: var(--gray-color);
+}
+.nav-left-block {
+  display: flex;
+  align-items: center;
+}
+
+.primary-cta i {
+  transform: rotate(45deg);
+  padding-left: 8px;
+  font-size: 18px;
+}
+
+.down-arrow {
+  padding-left: 10px;
+}
+
+/* @media query */
+
+@media (max-width: 1024px) {
+  .header-contact {
+    display: none;
+  }
+  .navigation-main .primary-cta {
+    display: none;
+  }
+  .navigation-main {
+    top: 0;
+  }
+  .nav-button {
+    display: block;
+  }
+  .nav-button .close-outline {
+    display: none;
+  }
+
+  .navigation-main .nav-links-block {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
+    background: var(--white-color);
+    width: 270px;
+    height: 100vh;
+  }
+
+  .navigation-main .nav-links-block.button-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navigation-main .nav-links {
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 20%;
+  }
+  .navigation-main .nav-links a {
+    padding: 10px 30px;
+  }
+
+  .active .close-outline {
+    display: block;
+  }
+  .active .menu-outline {
+    display: none;
+  }
+  .nav-links-block .nav-links {
+    align-items: flex-start;
+  }
+}

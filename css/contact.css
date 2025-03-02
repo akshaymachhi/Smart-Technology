@@ -1,0 +1,97 @@
+.email-input-container {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  border: none;
+  padding: 15px 20px;
+}
+
+.email-input-container img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.email-input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.contact-main {
+  background-color: transparent;
+  background: #eff2f5;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  border-bottom: 1px solid #0e2b5c40;
+}
+
+.contact-form .paragraph {
+  margin-bottom: 0;
+}
+.contact-form {
+  background-color: var(--white-color);
+  padding: 25px;
+}
+
+.links-item {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 70px;
+}
+
+.links-item li {
+  padding-bottom: 15px;
+}
+
+.contact-pages-links {
+  display: flex;
+}
+
+.contact-pages {
+  margin-left: 30px;
+}
+
+.contact-pages h3,
+.office-address h3 {
+  margin-bottom: 30px;
+}
+
+.office-contact {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.office-contact li {
+  padding-bottom: 15px;
+}
+
+.office-contact li a {
+  color: var(--gray-color);
+}
+
+.office-address .secondary-cta {
+  background: var(--blue-color);
+  color: var(--white-color);
+  background-image: linear-gradient(#fc5546, #fc5546);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: 0.5s;
+  padding: 15px 30px;
+}
+.secondary-cta:hover {
+  background-size: 100% 100%;
+}
+
+/* @media query */
+
+@media (max-width: 768px) {
+  .contact-main {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
