@@ -47,8 +47,8 @@
 
 .icon-roller {
   position: absolute;
-  top: 15%;
-  right: 13%;
+  top: 5%;
+  right: 14%;
   padding: 25px;
   background: #bbbbbb1f;
   border-radius: 50px;;
@@ -78,8 +78,7 @@
   }
 
   .icon-roller {
-    top: 5%;
-    right: 5%;
+    right: 7%;
     padding: 20px;
   }
 }
